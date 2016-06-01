@@ -1,0 +1,187 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html lang='en-GB' xml:lang='en-GB' xmlns='http://www.w3.org/1999/xhtml'>
+  <head>
+    <title>Map</title>
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type' />
+    <link href="./stylesheets/all.css?1240159244" media="screen" rel="stylesheet" type="text/css" />
+    <script src="http://maps.google.com/maps?file=api&amp;v=2&amp;sensor=false&amp;key=ABQIAAAATctVbSS7M2x4UWSGUwWmQxSpILdVrGs-jnP3zcw3hU5v_z_L-RQQCmVzEHy8fSTH5qg-OE8TaqM-5A" type="text/javascript"></script>
+
+<!--><script src="http://maps.gstatic.com/intl/en_ALL/mapfiles/159e/maps2.api/main.js" type="text/javascript"></script>-->
+
+<!--<script src="./javascripts/all.js?1240159244" type="text/javascript"></script>-->
+<script src="./javascripts/whereworldmap.js" type="text/javascript"></script>
+ <script type='text/javascript'>
+      //<![CDATA[
+        $(document).ready(function(){
+
+          function setWidth() {
+            $(".left").width($(document).width() - $(".right").width());
+            $(".map-footer").width($(document).width() - $(".right").width());
+          }
+
+          setWidth();
+
+          $(window).bind('resize', function() {
+            setWidth();
+          });
+
+
+		//	var lastPositionPoint = new GLatLng(data['last_position']['position']['latitude'], data['last_position']['position']['longitude']);
+		//	loadMapAtPoint(new GLatLng(data['last_position']['position']['latitude'], data['last_position']['position']['longitude']);
+		//	lastPositionMarker
+		//   loadMapAtPoint(new GLatLng(var mylat, var mylong));
+		loadMapAtPoint(new GLatLng(51.37178,14.853516));
+			
+			
+        });
+    //  ]]>
+    </script>
+
+<script src="http://maps.gstatic.com/cat_js/intl/en_ALL/mapfiles/159e/maps2.api/%7Bmod_jslinker,mod_drag,mod_controls_api%7D.js" type="text/javascript"></script>
+<script src="http://maps.gstatic.com/intl/en_ALL/mapfiles/159e/maps2.api/mod_poly.js" type="text/javascript"></script>
+
+
+
+
+
+	
+ 
+<script src="./javascripts/egeoxml.js" type="text/javascript"></script>
+
+
+ 
+  </head>
+  <body>
+    <div class='left'>
+      <div id='map'>
+      	
+		
+      </div>
+	  
+
+
+      <div class='map-footer'>
+        <!--  <ul class='stats'>
+          <li>
+            <span class='number'>0</span>
+            days so far
+          </li>
+          <li>
+            <span class='number'>3590</span>
+            miles so far
+          </li>
+          <li class='last'>
+            <span class='number'>131</span>
+            days to go
+          </li>
+        </ul>  -->
+      </div>
+    </div> 
+
+
+
+    <div class='right'>
+		 <div class='tweets'>	
+					<script>
+
+					/*
+					Count down until any date script-
+					By JavaScript Kit (www.javascriptkit.com)
+					Over 200+ free scripts here!
+					*/
+
+
+					//change the text below to reflect your own,
+					var before="the start!"
+					var current="Todays the day!"
+					var montharray=new Array("Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec")
+
+					function countdown(yr,m,d){
+					var today=new Date()
+					var todayy=today.getYear()
+					if (todayy < 1000)
+					todayy+=1900
+					var todaym=today.getMonth()
+					var todayd=today.getDate()
+					var todaystring=montharray[todaym]+" "+todayd+", "+todayy
+					var futurestring=montharray[m-1]+" "+d+", "+yr
+					var difference=(Math.round((Date.parse(futurestring)-Date.parse(todaystring))/(24*60*60*1000))*1)
+					if (difference==0)
+					document.write(current)
+					else if (difference>0)
+					document.write(+difference+" days until "+before)
+					}
+					//enter the count down date using the format year/month/day
+					countdown(2010,1,1)
+					</script>
+
+		<!--<div id="countup">
+					<script>
+
+					/*
+					Count up from any date script-
+					By JavaScript Kit (www.javascriptkit.com)
+					Over 200+ free scripts here!
+					*/
+
+					var montharray=new Array("Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec")
+
+					function countup(yr,m,d){
+					var today=new Date()
+					var todayy=today.getYear()
+					if (todayy < 1000)
+					todayy+=1900
+					var todaym=today.getMonth()
+					var todayd=today.getDate()
+					var todaystring=montharray[todaym]+" "+todayd+", "+todayy
+					var paststring=montharray[m-1]+" "+d+", "+yr
+					var difference=(Math.round((Date.parse(todaystring)-Date.parse(paststring))/(24*60*60*1000))*1)
+					difference+=" days"
+					document.write(""+difference+" on the road")
+					}
+					//enter the count up date using the format year/month/day
+					countup(2010,1,1)
+					</script>
+				</div>
+			-->
+		<!--	 <a href="http://www.twitter.com"><img style="padding-top: 0px; padding-left:0px;" src="./images/twitter_logo.png"></a> -->
+
+	        </div>
+	
+      <div class='right-inner'>
+        
+        <span class='cleardiv'><!-- IE --></span>
+        <p class='about'>
+          Pedal 2 New York ></p>
+ <bike><a href="http://www.pedal2newyork.com"><img style="padding-top: 0px; padding-left:0px;" src="http://www.pedal2newyork.com/images/bike.png"></a></bike>
+        
+       
+        
+       
+        
+       
+
+
+		<div class='sponsors'>
+	<p>Live Satellite Tracking made possible by SPOT personal tracker.<br></p>
+	
+		<a href="http://international.findmespot.com/"><img style="padding-left: 15px;" src="../images/spot1.png"></a>
+		 </div>
+	
+	<div class="footer"> 
+		<pfooter>	
+		Copyright &copy; 
+		<script type="text/javascript">
+			var d = new Date()
+			document.write(d.getFullYear())
+		</script> 
+		<br>Pedal 2 New York. <br>All Rights Reserved</pfooter> </div>      
+        
+      </div>
+    </div>
+
+
+
+  
+  </body>
+</html>	

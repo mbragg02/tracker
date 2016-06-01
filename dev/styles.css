@@ -1,0 +1,49 @@
+* {
+	margin: 0;
+	padding: 0;
+	
+}
+
+html, body {
+font-family: 'lucida sans unicode', 'lucida grande',
+		helvetica, 'bitstream vera sans', sans-serif;
+line-height:1.5;
+font-size: 14px;
+color: #eee;
+height: auto;
+
+	background-color: #191919;
+	text-decoration: none;
+}
+
+a:link {
+	text-decoration: none;
+	color: red;
+}
+a:hover{
+	color: gray;
+	
+}
+
+
+
+
+
+
+h1 {
+	color: black;
+}
+h2 {
+	color: black;
+}
+
+
+
+#banner {
+	
+	width: 100%;
+	background-color: silver;
+	height: auto;
+	text-align: center;
+	margin-top: 100px;
+}

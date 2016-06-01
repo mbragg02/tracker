@@ -1,0 +1,281 @@
+/* @override http://localhost/map/stylesheets/all.css?1240159244 */
+
+/*
+Copyright (c) 2009, Yahoo! Inc. All rights reserved.
+Code licensed under the BSD License:
+http://developer.yahoo.net/yui/license.txt
+version: 2.7.0
+*/
+html{color:#000;background:#FFF;}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,button,textarea,p,blockquote,th,td{margin:0;padding:0;}table{border-collapse:collapse;border-spacing:0;}fieldset,img{border:0;}address,caption,cite,code,dfn,em,strong,th,var,optgroup{font-style:inherit;font-weight:inherit;}del,ins{text-decoration:none;}li{list-style:none;}caption,th{text-align:left;}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal;}q:before,q:after{content:'';}abbr,acronym{border:0;font-variant:normal;}sup{vertical-align:baseline;}sub{vertical-align:baseline;}legend{color:#000;}input,button,textarea,select,optgroup,option{font-family:inherit;font-size:inherit;font-style:inherit;font-weight:inherit;}input,button,textarea,select{*font-size:100%;}
+ 
+html {
+  height: 100%;
+}
+ 
+body {
+  height: 100%;
+  font-family: 'lucida sans unicode', 'lucida grande',
+		helvetica, 'bitstream vera sans', sans-serif;
+  font-size: 12px;
+}
+ 
+span.cleardiv {
+  clear: both;
+  display: block;
+}
+ 
+.left {
+  float: left;
+/*  width: 70%;*/
+  height: 100%;
+  }
+ 
+.right {
+  float: right;
+  width: 200px;
+  overflow: auto;
+  height: 100%;
+	background-color: #191919;
+}
+ 
+.right-inner {
+  margin: 0 10px 10px;
+  height: 90%;
+}
+ 
+#map {
+  width: 100%;
+  height: 100%;
+}
+ 
+.map-header {
+  position: absolute;
+  top: 0px;
+  margin: 0 auto;
+  z-index: 1;
+  width: 70%;
+  text-align: center;
+  background-image: url('/images/transparent-75.png');
+  color: white;
+}
+ 
+h1 {
+  font-size: 1.5em;
+/*  padding: 8px;*/
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 0.5em;
+}
+ 
+.map-footer {
+  position: absolute;
+  bottom: 40px;
+  margin: 0 auto;
+  z-index: 1;
+  width: 70%;
+  text-align: center;
+  background-image: url('/images/transparent-75.png');
+/*  background-color: white;*/
+  color: white;
+}
+ 
+.map-footer img {
+  margin: 10px;
+}
+ 
+.marker-image {
+  width: 240px;
+  height: 240px;
+  text-align: center;
+}
+ 
+.marker-thumbnails {
+  width: 340px;
+}
+ 
+.marker-thumbnails img {
+  width: 75px;
+  height: 75px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+ 
+a {
+  color: #ccc;
+	text-align: center;
+
+
+}
+ 
+p {
+	text-align: left;
+	color: #191919;
+	margin: 5px 5px 10px;
+}
+ 
+h2 {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-bottom: 0.5em;
+  display: block;
+  width: 100%;
+	text-align: center;
+}
+
+ 
+ul {
+  margin: 0 10px 10px 10px;
+}
+ 
+ul li {
+  list-style: disc outside;
+  margin-bottom: 0.5em;
+}
+ 
+span.time-ago {
+  color: #666;
+}
+ 
+h1.where {
+  text-indent: -9000px;
+  background-image: url('/images/whereintheworldisjames.png');
+  height: 43px;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+ 
+
+ 
+p.spot {
+  text-align: center;
+}
+ 
+.sponsors {
+/* float: right;*/
+ width: 180px;
+/*  height: 230px;*/
+
+	position: absolute;
+
+	color: #4c4c4c;
+	height: 220px;
+	background-color: #e6e6e6;
+	top: 130px;
+}
+
+pfooter {
+	color: #666;
+	font-weight: normal;
+	font-size: .9em;
+}
+
+.footer {
+/* float: right;*/
+ width: 180px;
+/*  height: 230px;*/
+  text-align: center;
+  margin-top: 0px;
+	position: absolute;
+ bottom: 30px;
+	height: 50px;
+}
+ 
+.justgiving-widget {
+  float: right;
+  margin-left: 5px;
+  margin-bottom: 5px;
+}
+ 
+hr {
+  height: 1px;
+  border: 0;
+  border-bottom: 3px dotted #f26f27;
+  color: #333;
+/*  background-color: #333;*/
+  width: 100%;
+  clear: both;
+}
+ 
+ul.media {
+  float: left;
+  width: 80px;
+/*  text-align: center;*/
+/*  margin-left: 0;*/
+/*  margin-bottom: 0;*/
+}
+ 
+ul.media li {
+  display: block;
+  margin: 0px;
+/*  position: relative;*/
+/*  height: 180px;*/
+}
+ 
+ul.media li.blog {
+  margin-top: -16px;
+}
+ 
+ul.media li.twitter {
+  margin-top: -5px;
+}
+ 
+ul.media li.flickr {
+/*  margin-top: -5px;*/
+  margin-top: -10px;
+}
+ 
+p.about {
+/*  margin-top: -40px;*/
+/*  font-size: 1.3em;*/
+  line-height: 1.4em;
+	color: white;
+	width: 120px;
+
+	
+	margin-top: 9px;
+	margin-left: 0px;
+	float: left;
+}
+
+
+bike {
+	float: right;
+	
+	
+	padding-right: 10px;
+	padding-top: 0px;
+}
+
+ul.stats {
+  text-align: center;
+  margin: 0;
+}
+ 
+ul.stats li {
+  display: inline;
+}
+ 
+ul.stats li {
+  margin-right: 20px;
+}
+ 
+ul.stats li span.number {
+  font-size: 2em;
+}
+ 
+ul.stats li.last {
+  margin-right: 0;
+}
+ 
+.tweets {
+	color: #fff;
+	top: 80px;
+	position: relative;
+	text-align: center;
+	background-color: maroon;
+	font-weight: normal;
+}
+
+pcountdown {
+	
+}
