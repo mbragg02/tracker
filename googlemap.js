@@ -54,7 +54,7 @@ function createMarker(map, myLatLng, name, address, located_at) {
     const d = dt.getDate();
     const formattedDate = `${y}-${m}-${d}`;
 
-    const marker = new google.maps.Marker({
+    const marker = new google.maps.marker.AdvancedMarkerElement({
         position: myLatLng,
         map: map,
         title: `${name}\n${address}\n${formattedDate}`
