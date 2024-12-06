@@ -6,7 +6,8 @@ function initialize() {
     const myLatlng = new google.maps.LatLng(54.361652, -1.424279);
     const myOptions = {
         center: myLatlng,
-        mapTypeId: google.maps.MapTypeId.TERRAIN
+        mapTypeId: google.maps.MapTypeId.TERRAIN,
+		mapId: "fb2d16842071ada7"
     };
     map = new google.maps.Map(document.getElementById("map_canvas"), myOptions);
     jsonparse();
