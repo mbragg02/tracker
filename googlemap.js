@@ -45,6 +45,7 @@ function setMarkers(map, locations) {
         strokeOpacity: 1.0,
         strokeWeight: 2
     });
+
     bikeroute.setMap(map);
 }
 
@@ -58,7 +59,7 @@ function createMarker(map, myLatLng, name, address, located_at) {
     const marker = new google.maps.marker.AdvancedMarkerElement({
         position: myLatLng,
         map: map,
-        title: `${name}\n${address}\n${formattedDate}`
+        content: `${name}\n${address}\n${formattedDate}`
     });
 
     google.maps.event.addListener(marker, 'click', () => {
